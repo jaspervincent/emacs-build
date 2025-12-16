@@ -1,7 +1,9 @@
 [![MacOS Build for GNU Emacs](https://github.com/jaspervincent/emacs-build/actions/workflows/build.yml/badge.svg)](https://github.com/jaspervincent/emacs-build/actions/workflows/build.yml)
 
-本仓库每天 UTC 时间 0:00 直接从上游 Git 源自动构建适用于 Darwin 的 GNU Emacs（带内存池系统）。
-此版本专为希望测试最新版本的 Emacs 开发者而设计。由于此处不会修改源代码，请将任何错误报告直接发送至 Emacs 邮件列表。
+
+本仓库每天 UTC 时间 0:00 直接从上游 Git 源自动构建包含和不包含 Darwin 内存池系统的 GNU Emacs。
+
+此构建版本面向希望测试最新版本的 Emacs 开发者。请将任何错误报告直接发送至 Emacs 邮件列表，因为此处不会修改源代码。
 
 构建过程中未使用任何包管理器，所有外部依赖项均从上游获取并从源代码编译。
 生成的 Emacs 是静态链接的（系统组件除外），因此可以进行链接时优化。
